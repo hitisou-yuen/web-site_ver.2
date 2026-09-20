@@ -15,7 +15,7 @@ const ReservationSystem = {
 
     prices: {
         // ★修正：使わない料金を整理しました
-        A: { adultLunch: 2400, adultSashimi: 1500, adultRiceSet: 1500, adultPotato: 1500, adultYakiniku: 2200, childKids: 1200, childLight: 750, shioyaki: 0, gyoden: 50, karaage: 80, extraShioyaki: 400, extraGyoden: 450, extraKaraage: 480, takeoutRods: 1000, methodRaw: 400, methodGut: 420, methodGrill: 440 },
+        A: { adultLunch: 2700, adultSashimi: 1800, adultRiceSet: 1800, adultPotato: 1800, adultYakiniku: 2200, childKids: 1200, childLight: 750, shioyaki: 0, gyoden: 50, karaage: 80, extraShioyaki: 400, extraGyoden: 450, extraKaraage: 480, takeoutRods: 1000, methodRaw: 400, methodGut: 420, methodGrill: 440 },
         B: { dogFee: 500, drinkAlcohol: 2000, drinkSoftAdult: 1500, drinkSoftChild: 750 }
     },
 

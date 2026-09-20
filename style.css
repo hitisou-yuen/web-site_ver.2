@@ -68,6 +68,9 @@ a {
     font-family: var(--font-mincho);
     font-weight: normal;
 }
+.text-center {
+    text-align: center;
+}
 
 /* ========================================
    Common Layout (Header, Footer)
@@ -734,6 +737,27 @@ a {
 .info-icon { font-size: 2.5rem; margin-bottom: 15px; }
 .info-card .highlight { color: var(--color-accent); font-weight: bold; }
 
+/* ドッグランCTA：背景に写真を敷く特別仕様（他ページのpage-bottom-ctaには影響しません） */
+.dogrun-cta-bg {
+  background-image: linear-gradient(rgba(20, 34, 24, 0.55), rgba(20, 34, 24, 0.55)), url('images/dogrun/dogrun.JPG');
+  background-size: cover;
+  background-position: center;
+}
+.dogrun-cta-bg .cta-message {
+  color: var(--color-white);
+}
+.dogrun-cta-bg .btn-outline-main {
+  background-color: var(--color-main);
+  border-color: var(--color-main);
+  color: var(--color-white);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+.dogrun-cta-bg .btn-outline-main:hover {
+  background-color: var(--color-white);
+  border-color: var(--color-white);
+  color: var(--color-main);
+}
+
 .bbq-benefit-highlight { padding: 60px 20px; }
 .benefit-container { background-color: var(--color-main); color: #fff; padding: 50px 30px; border-radius: 20px; text-align: center; position: relative; overflow: hidden; }
 .benefit-badge { display: inline-block; background: var(--color-accent); padding: 4px 15px; border-radius: 50px; font-size: 0.8rem; letter-spacing: 2px; margin-bottom: 20px; }
@@ -882,7 +906,7 @@ body:not(.ayu-detail-page) section:not(.page-hero):not(.bbq-hero):not(.restauran
 }
 
 /* 2. 背景色を白にする（元から色が付いている特殊なセクションは除外） */
-body:not(.ayu-detail-page) section:not(.page-hero):not(.bbq-hero):not(.restaurant-hero):not(.access-hero):not(.story-hero):not(.dogrun-hero):not(.top-hero):not(.aug-price-section):not(.top-commitment):not(.story-closing) {
+body:not(.ayu-detail-page) section:not(.page-hero):not(.bbq-hero):not(.restaurant-hero):not(.access-hero):not(.story-hero):not(.dogrun-hero):not(.top-hero):not(.aug-price-section):not(.top-commitment):not(.story-closing):not(.dogrun-cta-bg) {
   background-color: #ffffff !important;
 }
 
